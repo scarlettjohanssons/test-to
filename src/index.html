@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test1</title>
+  </head>
+<body>
+  <div class="lists">
+    <div class="bg">
+      <h1>TEST</h1>
+      <button class="f-low">Low</button>
+      <button class="f-normal">Normal</button>
+      <button class="f-high">High</button>
+      <button class="f-all">All</button>
+        <ul class="list">
+          <li><input type="text" class="search" placeholder="Search by title" /></li>
+          <li>
+            <select class="status_list">
+              <option value="status_all">All</option>
+              <option value="status_all">Open</option>
+              <option value="status_done">Done</option>
+            </select>
+          </li>
+          <li>
+            <select class="priority_list">
+              <option value="priority_all" class="all">All</option>
+              <option value="priority_high" class="high">High</option>
+              <option value="priority_normal" class="normal">Normal</option>
+              <option value="priority_low" class="low">Low</option>
+            </select>
+          </li>
+          <li class="list_btn"><button class="btn_pop_up">Create</button></li>
+        </ul>
+
+        <ul id="todo-list" class="todo-list">
+        </ul>
+    </div>
+
+    <div class="overlay">
+        <div class="popup">
+          <div class="titl">Title:</div>
+          <input type="text" id="titl" value="Title" onfocus="if (this.value != '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Title';}">
+    
+          <div class="description">Description:</div>
+          <textarea type="text" id="description" value="Description" onfocus="if (this.value != '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Description';}"></textarea>
+    
+          <div class="priority">Priority:</div>
+          <select class="popup_priority">
+            <option selected="selected" value="High" class="">High</option>
+            <option selected="selected" value="Normal" class="">Normal</option>
+            <option selected="selected" value="Low" class="">Low</option>
+          </select> 
+          
+          <ul class="list2">
+            <li><button class="btn_cancel">Cancel</button></li>
+            <li><button class="btn_save">Save</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
