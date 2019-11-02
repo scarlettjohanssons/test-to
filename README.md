@@ -1,4 +1,5 @@
 # test-Тестовая работа To Do List. При исполнени задания были использованы: Webpack, HTML, SASS, jQuery а также плагины Webpack.
+Реализован поиск. Через фильтры не получилось. В to do list реализовано удаление, кнопка готовности. Редактирование реализовано криво. При нажатии на кнопку Create открывается pop up окно. В окне создание нового to do можно написат title description и можно выбрать приоритет. 
 Для начала создал package.json - npm init -y
 Установка node modules - npm install webpack webpack-cli --svae-dev
 Для настройки Webpack, был создан файл webpack.config.js
